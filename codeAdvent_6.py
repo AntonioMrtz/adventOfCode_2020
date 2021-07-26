@@ -14,7 +14,6 @@ contador_v2 = 0
 def comprobar():
     global array
     aux = 0
-    # print(array)
     for i in range(26):
         if(array[i] == 1):
             aux += 1
@@ -29,8 +28,7 @@ def lectura():
         linea = archivo.readline()
 
         if (linea.rstrip() == "" or not linea):
-            contador += comprobar()
-            #print(contador)
+            contador += comprobar()  
             for i in range(26):
                 array[i] = 0
             if(not linea):
@@ -39,7 +37,7 @@ def lectura():
             for i in range(len(linea)-1):
                 aux = ord(linea[i])-97
                 array[aux] = 1
-        #print(linea.rstrip())
+        
 
 
 def comprobar_v2(m):
