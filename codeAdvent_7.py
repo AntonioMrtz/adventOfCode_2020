@@ -45,7 +45,7 @@ def lectura():
 def lectura_sin_tratar():
 
     global total
-    archivo = open("prueba.txt")     # ! CUIDADO QUE TIENE PUESTO PRUEBA
+    archivo = open("input6.txt")     # ! CUIDADO QUE TIENE PUESTO PRUEBA
     while True:
         linea = archivo.readline()
         if not linea:
