@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     lectura()
 
-    for i in range(6):
+    for i in range(len(array)-1): # en principio tiene que ser n^n para que ninguna regla se quede fuera pero en este caso funciona en 6 iteraciones
         tratar_array()
     print(total)
     print()
